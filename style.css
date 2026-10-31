@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #d18227; /* رنگ پس‌زمینه دقیق تصویر */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 24px;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+.display {
+    width: 100%;
+    height: 75px;
+    background-color: #f1f3f4;
+    border: 1px solid #e0e0e0;
+    border-radius: 40px; /* نمایشگر بیضی مطابق عکس */
+    margin-bottom: 24px;
+    text-align: right;
+    padding: 0 25px;
+    font-size: 2.2rem;
+    color: #333;
+    outline: none;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+button {
+    height: 58px;
+    width: 58px;
+    border: none;
+    border-radius: 50%; /* دکمه‌های دایره‌ای */
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:active {
+    transform: scale(0.92);
+    background-color: #e8eaed;
+}
+button.operator {
+    background-color: #f1f3f4;
+    color: #d18227;
+    font-weight: bold;
+}
+button.clear {
+    background-color: #f1f3f4;
+    color: #d93025;
+    font-weight: bold;
+}
+button.equal {
+    background-color: #d18227;
+    color: white;
+}
+button.equal:active {
+    background-color: #b56f1f;
+}

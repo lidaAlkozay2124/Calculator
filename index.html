@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماشین حساب دیجیتال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <input type="text" class="display" id="screen" readonly value="0">
+    <div class="buttons">
+        <button class="clear" id="btn-ac">AC</button>
+        <button class="operator" id="btn-del">DEL</button>
+        <button class="operator" id="btn-pct">%</button>
+        <button class="operator" id="btn-div">/</button>
+        
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="operator" id="btn-mul">*</button>
+        
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="operator" id="btn-sub">-</button>
+        
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="operator" id="btn-add">+</button>
+        
+        <button class="num">0</button>
+        <button class="num">.</button>
+        <button class="equal" style="grid-column: span 2; width: 100%; border-radius: 40px;" id="btn-equal">=</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
